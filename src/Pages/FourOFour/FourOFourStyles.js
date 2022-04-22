@@ -21,6 +21,7 @@ export const FourOFourImageContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow:hidden;
   & img {
     width: min(90%, 500px);
     z-index: 2;
