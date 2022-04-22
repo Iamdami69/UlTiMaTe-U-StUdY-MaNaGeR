@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DayAndNightComponent = styled.div`
-  height: 50px;
+  height: ${(props) => props.height};
   width: 90px;
   border-radius: 84px;
   display: flex;
@@ -15,8 +15,8 @@ export const DayAndNightComponent = styled.div`
 `;
 
 export const CircleComponent = styled.div`
-  width: 44px;
-  height: 44px;
+  width: ${(props) => props.innerWidth};
+  height: 100%;
   background-color: #ffcf96;
   border-radius: 50px;
   @media only screen and (max-width: 550px) {

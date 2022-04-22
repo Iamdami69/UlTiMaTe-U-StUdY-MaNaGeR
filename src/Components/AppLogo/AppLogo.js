@@ -2,10 +2,10 @@
 
 import { AppLogoPath } from "./AppLogoStyles";
 
-export function AppLogo({ color, size, className }) {
+export function AppLogo({ color, size }) {
   return (
     <svg
-      className={`hasCursorPointer ${className} `}
+      className={`hasCursorPointer`}
       style={{
         width: size,
         aspectRatio: "1/1"
