@@ -13,9 +13,9 @@ export function FourOFour() {
   const { theme } = useTheme();
   return (
     <PageWarpper>
-      <FourOFourHeader>
+      <DayAndNight height={`30px`} innerWidth={`30px`} />
+      {/* <FourOFourHeader>
         <AppLogo size={28} color={theme.brandColor} />
-        <DayAndNight height={`30px`} innerWidth={`30px`} />
       </FourOFourHeader>
       <FourOFourContainer>
         <FourOFourImageContainer>
@@ -25,7 +25,7 @@ export function FourOFour() {
             alt=""
           />
         </FourOFourImageContainer>
-      </FourOFourContainer>
+      </FourOFourContainer> */}
     </PageWarpper>
   );
 }

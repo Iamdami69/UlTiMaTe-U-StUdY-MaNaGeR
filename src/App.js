@@ -15,14 +15,14 @@ export default function App() {
   const disableContext = (/** @type {{ preventDefault: () => void; }} */ e) => {
     e.preventDefault();
   };
-  // useEffect(() => {
-  //   const unSub = document.addEventListener("keydown", (event) => {
-  //     if (event.code === "KeyI" && event.ctrlKey && event.shiftKey) {
-  //       event.preventDefault();
-  //     }
-  //   });
-  //   return unSub;
-  // }, []);
+  useEffect(() => {
+    const unSub = document.addEventListener("keydown", (event) => {
+      if (event.code === "KeyI" && event.ctrlKey && event.shiftKey) {
+        event.preventDefault();
+      }
+    });
+    return unSub;
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
