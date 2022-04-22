@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const HomePage = styled.section`
-  height: 100vh;
+
+export const FourOFourPage = styled.section`
   width: 100%;
 `;

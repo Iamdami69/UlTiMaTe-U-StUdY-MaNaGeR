@@ -16,12 +16,12 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <AppComponent onContextMenu={disableContext}>
-        <PageWarpper className={undefined}>
-          {authIsReady && <AppRoutes />}
-          {!authIsReady && <h1>Loading......</h1>}
-        </PageWarpper>
-      </AppComponent>
+      {/* <AppComponent onContextMenu={disableContext}> */}
+      <PageWarpper className={undefined}>
+        {authIsReady && <AppRoutes />}
+        {!authIsReady && <h1>Loading......</h1>}
+      </PageWarpper>
+      {/* </AppComponent> */}
     </ThemeProvider>
   );
 }
