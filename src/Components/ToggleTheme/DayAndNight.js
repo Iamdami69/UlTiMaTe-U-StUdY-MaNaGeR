@@ -8,9 +8,7 @@ export function DayAndNight({ height = "50px", innerWidth = "44px" }) {
   return (
     <DayAndNightComponent
       height={height}
-      onClick={() => {
-        toggleTheme();
-      }}
+      onClick={toggleTheme}
       isClicked={isDarkMode}
     >
       <CircleComponent
