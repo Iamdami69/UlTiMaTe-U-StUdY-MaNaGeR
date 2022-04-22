@@ -1,4 +1,5 @@
 //@ts-check
+import { useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { AppRoutes } from "./AppRoutes/AppRoutes";
 import { GlobalStyles } from "./GlobalStyles";
@@ -13,11 +14,18 @@ export default function App() {
   const disableContext = (/** @type {{ preventDefault: () => void; }} */ e) => {
     e.preventDefault();
   };
+  useEffect(() => {
+    document.addEventListener("keydown", (event) => {
+      if (event.code === "KeyI" && event.ctrlKey && event.shiftKey) {
+        event.preventDefault();
+      }
+    });
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       {/* <AppComponent onContextMenu={disableContext}> */}
-      <PageWarpper className={undefined}>
+      <PageWarpper disableContext={disableContext} className={undefined}>
         {authIsReady && <AppRoutes />}
         {!authIsReady && <h1>Loading......</h1>}
       </PageWarpper>
