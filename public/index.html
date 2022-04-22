@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="application-name" content="Ultimate U" />
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index,follow" />
+    <!-- All Search Engines -->
+    <meta name="googlebot" content="index,follow" />
+    <!-- Google Specific -->
+    <!-- Gives a general age rating based on the document's content -->
+    <meta name="rating" content="General" />
+    <!-- Allows control over how referrer information is passed -->
+    <meta name="referrer" content="no-referrer" />
+    <link rel="me" href="mailto:iamdami69@gmail.com" />
+    <meta
+      name="description"
+      content="Ultimate U, a study management app develop to help students stay organized, keep track of their daily times table, keep track of class and time, chat withh class and school mates..."
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="./manifest.json" />
+    <link
+      rel="icon"
+      herf="./android/android-launchericon-512-512.png "
+      <!--
+      Icon
+      in
+      the
+      highest
+      resolution
+      we
+      need
+      it
+      for
+      --
+    />
+    <link rel="icon" sizes="192x192" href="./ios/192.png" />
+
+    <!-- Apple Touch Icon (reuse 192px icon.png) -->
+    <link rel="apple-touch-icon" href="./ios/192.png" />
+
+    <!-- Safari Pinned Tab Icon -->
+    <link rel="mask-icon" href="./windows11/LargeTile.scale-100.png" />
+    <link
+      rel="shortcut icon"
+      href="./android/android-launchericon-512-512.png"
+    />
+    <!-- Browsers -->
+    <!-- Locks the screen into the specified orientation -->
+    <meta name="screen-orientation" content="landscape/portrait" />
+
+    <!-- Display this document in fullscreen -->
+    <meta name="full-screen" content="yes" />
+
+    <!-- UC browser will display images even if in "text mode" -->
+    <meta name="imagemode" content="force" />
+
+    <!-- Document will be displayed in "application mode"(fullscreen, forbidding gesture, etc.) -->
+    <meta name="browsermode" content="application" />
+
+    <!-- Disabled the UC browser's "night mode" for this document -->
+    <meta name="nightmode" content="disable" />
+
+    <!-- Simplify the document to reduce data transfer -->
+    <meta name="layoutmode" content="fitscreen" />
+
+    <!-- Disable the UC browser's feature of "scaling font up when there are many words in this document" -->
+    <meta name="wap-font-scale" content="no" />
+    <title>Ultimate U: Study Manager</title>
+  </head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <script type="module">
+      import "https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate";
+
+      const el = document.createElement("pwa-update");
+      document.body.appendChild(el);
+    </script>
+  </body>
+</html>

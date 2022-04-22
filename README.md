@@ -1,2 +1,2 @@
-# UlTiMaTe-U-StUdY-MaNaGeR
+# Ultimate You - Study Manager
 Created with CodeSandbox
