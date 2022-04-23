@@ -7,7 +7,8 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-
+outline:none;
+border:none;
   user-select: none !important;
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none !important;
