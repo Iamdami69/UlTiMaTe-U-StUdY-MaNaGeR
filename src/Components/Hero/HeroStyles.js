@@ -33,25 +33,15 @@ export const HeroHeading = styled.h1`
   margin-bottom: 0.75rem;
   font-size: 1.9375rem;
   line-height: 1.2;
-  font-weight: 700;
   & span {
-    font-weight: 700;
     color: ${(props) => props.theme.brandColor};
   }
   @media only screen and (min-width: 550px) and (max-width: 768px) {
     font-size: 2.1875rem;
-    font-weight: 500;
-    & span {
-      font-weight: 500;
-    }
   }
   @media only screen and (min-width: 769px) {
-    font-weight: 500;
     margin-bottom: 1rem;
     font-size: 2.75rem;
-    & span {
-      font-weight: 500;
-    }
   }
 `;
 export const HeroParagraph = styled.p`
