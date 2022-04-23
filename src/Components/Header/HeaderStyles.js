@@ -5,7 +5,7 @@ export const HeaderComponent = styled.header`
   justify-content: center;
   align-items: center;
   padding: 16px;
-  transition: width 0.5s ease !important;
+  transition: all 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), width 0.2s ease !important;
   background-color: ${(props) =>
     props.validator ? props.theme.depthColorTwo : props.theme.background};
   width: ${(props) => (props.validator ? "90%" : "100%")};

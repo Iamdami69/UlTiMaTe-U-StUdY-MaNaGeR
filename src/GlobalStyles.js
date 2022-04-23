@@ -25,7 +25,9 @@ border:none;
 img{
   pointer-events:none;
 }
-
+.hasFluidFont{
+  font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
+}
 .touchableOpacity:active{
   filter: opacity(0%);
 }
