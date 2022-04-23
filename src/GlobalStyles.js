@@ -39,13 +39,13 @@ img{
   box-shadow: 0 2px 6px rgb(0 0 0 / 30%);
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
   .wontShowOnMobile {
     display: none;
   }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 768px) {
+@media only screen and (min-width: 650px) and (max-width: 768px) {
   .wontShowOnTablet {
     display: none;
   }

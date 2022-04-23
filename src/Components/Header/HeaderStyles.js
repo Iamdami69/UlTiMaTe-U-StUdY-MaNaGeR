@@ -46,7 +46,7 @@ export const Nav = styled.nav`
   display: flex;
   gap: 10px;
   align-items: center;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 650px) {
     position: absolute;
     min-height: 200px;
     background-color: ${(props) => props.theme.depthColorThree};
