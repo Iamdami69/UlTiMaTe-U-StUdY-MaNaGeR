@@ -20,14 +20,12 @@ export function Header() {
   const { goTo } = useNavigate();
   const { theme } = useTheme();
   const [showMenu, setShowMenu] = useState(false);
-  // const goTo = (/** @type {String} */ where) => {
-  //   navigate(`/${where}`);
-  // };
+
   return (
     <HeaderComponent validator={showMenu}>
       <HeaderNav>
         <AppLogoContainer>
-          <AppLogo color={theme.brandColor} size={28} event={goTo("/")} />
+          <AppLogo color={theme.brandColor} size={28} event={() => goTo("/")} />
         </AppLogoContainer>
         <NavLinkContainer>
           <GetStarted data-to="none" onClick={() => goTo("/sign-up")}>
