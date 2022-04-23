@@ -2,9 +2,10 @@
 
 import { AppLogoPath } from "./AppLogoStyles";
 
-export function AppLogo({ color, size }) {
+export function AppLogo({ color, size, event }) {
   return (
     <svg
+      onClick={event}
       className={`hasCursorPointer`}
       style={{
         width: size,

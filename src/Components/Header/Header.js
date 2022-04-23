@@ -27,7 +27,7 @@ export function Header() {
     <HeaderComponent validator={showMenu}>
       <HeaderNav>
         <AppLogoContainer>
-          <AppLogo color={theme.brandColor} size={28} />
+          <AppLogo color={theme.brandColor} size={28} event={goTo("/")} />
         </AppLogoContainer>
         <NavLinkContainer>
           <GetStarted data-to="none" onClick={() => goTo("/sign-up")}>
