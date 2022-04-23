@@ -11,6 +11,10 @@ export const HeaderComponent = styled.header`
   width: ${(props) => (props.validator ? "90%" : "100%")};
   margin: ${(props) => (props.validator ? "10px auto 0 auto" : "unset")};
   border-radius: ${(props) => (props.validator ? "10px 10px 0 0" : "unset")};
+  @media only screen and (min-width: 650px) {
+    background-color: ${(props) => props.theme.background};
+    width: 100%;
+  }
 `;
 export const HeaderNav = styled.nav`
   height: 100%;
