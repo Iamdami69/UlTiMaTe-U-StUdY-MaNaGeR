@@ -5,7 +5,7 @@ export const HeaderComponent = styled.header`
   justify-content: center;
   align-items: center;
   padding: 16px;
-  transition: all 0.5s ease !important;
+  transition: width 0.5s ease !important;
   background-color: ${(props) =>
     props.validator ? props.theme.depthColorTwo : props.theme.background};
   width: ${(props) => (props.validator ? "90%" : "100%")};
@@ -74,7 +74,7 @@ export const Navlink = styled.button`
     background-color: ${(props) => props.theme.depthColor};
   }
   word-break: keep-all;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 650px) {
     width: 90%;
   }
 `;
